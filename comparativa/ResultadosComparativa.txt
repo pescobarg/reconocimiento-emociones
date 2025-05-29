@@ -1,0 +1,57 @@
+=== COMPARATIVA DE MODELOS DE DETECCIÓN DE EMOCIONES ===
+
+📊 Evaluación modelo Fine-Tuneado:
+              precision    recall  f1-score   support
+
+       angry       0.50      0.41      0.45       958
+     disgust       0.24      0.69      0.36       111
+        fear       0.44      0.24      0.31      1024
+       happy       0.79      0.77      0.78      1774
+     neutral       0.48      0.63      0.55      1233
+         sad       0.45      0.39      0.42      1247
+    surprise       0.61      0.79      0.69       831
+
+    accuracy                           0.56      7178
+   macro avg       0.50      0.56      0.51      7178
+weighted avg       0.56      0.56      0.55      7178
+
+Accuracy: 0.5581
+F1-score (weighted): 0.5487
+============================================================
+
+📊 Evaluación modelo CNN Casera:
+              precision    recall  f1-score   support
+
+       angry       0.52      0.54      0.53       958
+     disgust       0.75      0.35      0.48       111
+        fear       0.48      0.20      0.28      1024
+       happy       0.77      0.85      0.81      1774
+     neutral       0.50      0.64      0.56      1233
+         sad       0.46      0.50      0.48      1247
+    surprise       0.75      0.73      0.74       831
+
+    accuracy                           0.60      7178
+   macro avg       0.61      0.55      0.55      7178
+weighted avg       0.59      0.60      0.58      7178
+
+Accuracy: 0.5981
+F1-score (weighted): 0.5839
+============================================================
+
+📊 Evaluación modelo DeepFace (default):
+              precision    recall  f1-score   support
+
+       angry       0.46      0.37      0.41       958
+     disgust       0.53      0.23      0.32       111
+        fear       0.33      0.32      0.33      1024
+       happy       0.77      0.76      0.76      1774
+     neutral       0.40      0.53      0.46      1233
+         sad       0.40      0.40      0.40      1247
+    surprise       0.72      0.60      0.65       831
+
+    accuracy                           0.52      7178
+   macro avg       0.51      0.46      0.47      7178
+weighted avg       0.53      0.52      0.52      7178
+
+Accuracy: 0.5167
+F1-score (weighted): 0.5175
